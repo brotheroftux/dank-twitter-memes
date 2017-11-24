@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		62E4B5911FC7F25700AC9C3E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 62E4B5901FC7F25700AC9C3E /* main.cpp */; };
+		62E4B59E1FC7F2BB00AC9C3E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 62E4B59D1FC7F2BB00AC9C3E /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		62E4B58B1FC7F25700AC9C3E /* CopyFiles */ = {
+		62E4B5991FC7F2BB00AC9C3E /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -23,12 +23,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		62E4B58D1FC7F25700AC9C3E /* dank-twitter-memes */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "dank-twitter-memes"; sourceTree = BUILT_PRODUCTS_DIR; };
-		62E4B5901FC7F25700AC9C3E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		62E4B59B1FC7F2BB00AC9C3E /* dank-twitter-backend */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "dank-twitter-backend"; sourceTree = BUILT_PRODUCTS_DIR; };
+		62E4B59D1FC7F2BB00AC9C3E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		62E4B58A1FC7F25700AC9C3E /* Frameworks */ = {
+		62E4B5981FC7F2BB00AC9C3E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,7 +41,7 @@
 		62E4B5841FC7F25700AC9C3E = {
 			isa = PBXGroup;
 			children = (
-				62E4B58F1FC7F25700AC9C3E /* dank-twitter-memes */,
+				62E4B59C1FC7F2BB00AC9C3E /* dank-twitter-backend */,
 				62E4B58E1FC7F25700AC9C3E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,37 +49,37 @@
 		62E4B58E1FC7F25700AC9C3E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				62E4B58D1FC7F25700AC9C3E /* dank-twitter-memes */,
+				62E4B59B1FC7F2BB00AC9C3E /* dank-twitter-backend */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		62E4B58F1FC7F25700AC9C3E /* dank-twitter-memes */ = {
+		62E4B59C1FC7F2BB00AC9C3E /* dank-twitter-backend */ = {
 			isa = PBXGroup;
 			children = (
-				62E4B5901FC7F25700AC9C3E /* main.cpp */,
+				62E4B59D1FC7F2BB00AC9C3E /* main.cpp */,
 			);
-			path = "dank-twitter-memes";
+			path = "dank-twitter-backend";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		62E4B58C1FC7F25700AC9C3E /* dank-twitter-memes */ = {
+		62E4B59A1FC7F2BB00AC9C3E /* dank-twitter-backend */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 62E4B5941FC7F25700AC9C3E /* Build configuration list for PBXNativeTarget "dank-twitter-memes" */;
+			buildConfigurationList = 62E4B59F1FC7F2BB00AC9C3E /* Build configuration list for PBXNativeTarget "dank-twitter-backend" */;
 			buildPhases = (
-				62E4B5891FC7F25700AC9C3E /* Sources */,
-				62E4B58A1FC7F25700AC9C3E /* Frameworks */,
-				62E4B58B1FC7F25700AC9C3E /* CopyFiles */,
+				62E4B5971FC7F2BB00AC9C3E /* Sources */,
+				62E4B5981FC7F2BB00AC9C3E /* Frameworks */,
+				62E4B5991FC7F2BB00AC9C3E /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "dank-twitter-memes";
-			productName = "dank-twitter-memes";
-			productReference = 62E4B58D1FC7F25700AC9C3E /* dank-twitter-memes */;
+			name = "dank-twitter-backend";
+			productName = "dank-twitter-backend";
+			productReference = 62E4B59B1FC7F2BB00AC9C3E /* dank-twitter-backend */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -91,7 +91,7 @@
 				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = "Daniel Kuznetsov";
 				TargetAttributes = {
-					62E4B58C1FC7F25700AC9C3E = {
+					62E4B59A1FC7F2BB00AC9C3E = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
 					};
@@ -109,17 +109,17 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				62E4B58C1FC7F25700AC9C3E /* dank-twitter-memes */,
+				62E4B59A1FC7F2BB00AC9C3E /* dank-twitter-backend */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		62E4B5891FC7F25700AC9C3E /* Sources */ = {
+		62E4B5971FC7F2BB00AC9C3E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62E4B5911FC7F25700AC9C3E /* main.cpp in Sources */,
+				62E4B59E1FC7F2BB00AC9C3E /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,21 +229,33 @@
 			};
 			name = Release;
 		};
-		62E4B5951FC7F25700AC9C3E /* Debug */ = {
+		62E4B5A01FC7F2BB00AC9C3E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KFG5R89YHA;
+				HEADER_SEARCH_PATHS = (
+					./json/src,
+					"./cpp-httplib",
+				);
+				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
-		62E4B5961FC7F25700AC9C3E /* Release */ = {
+		62E4B5A11FC7F2BB00AC9C3E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KFG5R89YHA;
+				HEADER_SEARCH_PATHS = (
+					./json/src,
+					"./cpp-httplib",
+				);
+				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
 		};
@@ -259,11 +271,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		62E4B5941FC7F25700AC9C3E /* Build configuration list for PBXNativeTarget "dank-twitter-memes" */ = {
+		62E4B59F1FC7F2BB00AC9C3E /* Build configuration list for PBXNativeTarget "dank-twitter-backend" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				62E4B5951FC7F25700AC9C3E /* Debug */,
-				62E4B5961FC7F25700AC9C3E /* Release */,
+				62E4B5A01FC7F2BB00AC9C3E /* Debug */,
+				62E4B5A11FC7F2BB00AC9C3E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

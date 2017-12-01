@@ -1,25 +1,32 @@
 #include <iostream>
 
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wshorten-64-to-32"
-#include <httplib.h>
-#pragma clang diagnostic pop
+#include "Pipe.h"
+#include "image_parser.h"
+#include "image_processing.h"
+
+#include "cpp-httplib-mixin.h"
 
 #include <json.hpp>
-
-#include "image_parser.h"
 
 using namespace std;
 using namespace httplib;
 using nlohmann::json;
 
 int main(int argc, const char * argv[]) {
-    process_grayscale("./trash_sample_meme.jpg");
-    
     Server server;
     
-    server.post("/parse_image", [] (const Request & request, const Response & response) {
+    server.post("/parse_image", [] (const Request & request, Response & response) {
         json data = json::parse(request.body);
+        
+        string extracted_text;
+        make_pipe(data["url"])
+            | fetch_image
+            | process_grayscale
+            | parse_image
+            || extracted_text;
+        
+        cout << extracted_text << endl;
+        response.set_content(extracted_text, "text/plain");
     });
     
     server.listen("localhost", 8008);

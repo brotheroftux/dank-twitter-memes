@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		625CA07D1FD19E55001B16A8 /* image_parser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 625CA07C1FD19E55001B16A8 /* image_parser.cpp */; };
+		625CA07F1FD1BFF0001B16A8 /* libopencv_text.3.3.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 625CA07E1FD1BFF0001B16A8 /* libopencv_text.3.3.1.dylib */; };
+		625CA0831FD1C37E001B16A8 /* url.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 625CA0821FD1C37E001B16A8 /* url.cpp */; };
+		627AC1C41FD1DB6C00429B36 /* libssl.1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 627AC1C31FD1DB6C00429B36 /* libssl.1.0.0.dylib */; };
+		627AC1C81FD1DB9800429B36 /* libcrypto.1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 627AC1C71FD1DB9700429B36 /* libcrypto.1.0.0.dylib */; };
 		62B916DA1FC82F720079D157 /* image_processing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 62B916D91FC82F720079D157 /* image_processing.cpp */; };
 		62B916E01FC836330079D157 /* libopencv_core.3.3.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 62B916DC1FC835D10079D157 /* libopencv_core.3.3.1.dylib */; };
 		62B916E21FC836430079D157 /* libopencv_imgcodecs.3.3.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 62B916E11FC836430079D157 /* libopencv_imgcodecs.3.3.1.dylib */; };
@@ -27,6 +32,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		625CA07C1FD19E55001B16A8 /* image_parser.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = image_parser.cpp; sourceTree = "<group>"; };
+		625CA07E1FD1BFF0001B16A8 /* libopencv_text.3.3.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_text.3.3.1.dylib; path = ../../../../../usr/local/Cellar/opencv/3.3.1_1/lib/libopencv_text.3.3.1.dylib; sourceTree = "<group>"; };
+		625CA0821FD1C37E001B16A8 /* url.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = url.cpp; path = CxxUrl/url.cpp; sourceTree = "<group>"; };
+		625CA0841FD1CDCC001B16A8 /* cpp-httplib-mixin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "cpp-httplib-mixin.h"; sourceTree = "<group>"; };
+		625CA0851FD1D63B001B16A8 /* libssl.35.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libssl.35.dylib; path = ../../../../../usr/lib/libssl.35.dylib; sourceTree = "<group>"; };
+		625CA0871FD1D646001B16A8 /* libcrypto.35.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcrypto.35.dylib; path = ../../../../../usr/lib/libcrypto.35.dylib; sourceTree = "<group>"; };
+		6264FC331FCEF74C0039E05D /* Pipe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pipe.h; sourceTree = "<group>"; };
+		627AC1C31FD1DB6C00429B36 /* libssl.1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libssl.1.0.0.dylib; path = ../../../../../usr/local/Cellar/openssl/1.0.2m/lib/libssl.1.0.0.dylib; sourceTree = "<group>"; };
+		627AC1C51FD1DB7600429B36 /* engines */ = {isa = PBXFileReference; lastKnownFileType = folder; name = engines; path = ../../../../../usr/local/Cellar/openssl/1.0.2m/lib/engines; sourceTree = "<group>"; };
+		627AC1C71FD1DB9700429B36 /* libcrypto.1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcrypto.1.0.0.dylib; path = ../../../../../usr/local/Cellar/openssl/1.0.2m/lib/libcrypto.1.0.0.dylib; sourceTree = "<group>"; };
 		62B916D41FC811280079D157 /* image_parser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = image_parser.h; sourceTree = "<group>"; };
 		62B916D51FC82CC50079D157 /* image_processing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = image_processing.h; sourceTree = "<group>"; };
 		62B916D91FC82F720079D157 /* image_processing.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = image_processing.cpp; sourceTree = "<group>"; };
@@ -34,7 +49,7 @@
 		62B916DE1FC835F70079D157 /* libopencv_imgproc.3.3.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_imgproc.3.3.1.dylib; path = ../../../../../usr/local/Cellar/opencv/3.3.1_1/lib/libopencv_imgproc.3.3.1.dylib; sourceTree = "<group>"; };
 		62B916E11FC836430079D157 /* libopencv_imgcodecs.3.3.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_imgcodecs.3.3.1.dylib; path = ../../../../../usr/local/Cellar/opencv/3.3.1_1/lib/libopencv_imgcodecs.3.3.1.dylib; sourceTree = "<group>"; };
 		62E4B59B1FC7F2BB00AC9C3E /* dank-twitter-backend */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "dank-twitter-backend"; sourceTree = BUILT_PRODUCTS_DIR; };
-		62E4B59D1FC7F2BB00AC9C3E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		62E4B59D1FC7F2BB00AC9C3E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +57,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				627AC1C81FD1DB9800429B36 /* libcrypto.1.0.0.dylib in Frameworks */,
+				627AC1C41FD1DB6C00429B36 /* libssl.1.0.0.dylib in Frameworks */,
+				625CA07F1FD1BFF0001B16A8 /* libopencv_text.3.3.1.dylib in Frameworks */,
 				62B916E31FC83BFF0079D157 /* libopencv_imgproc.3.3.1.dylib in Frameworks */,
 				62B916E21FC836430079D157 /* libopencv_imgcodecs.3.3.1.dylib in Frameworks */,
 				62B916E01FC836330079D157 /* libopencv_core.3.3.1.dylib in Frameworks */,
@@ -54,6 +72,12 @@
 		62B916DB1FC835D10079D157 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				627AC1C71FD1DB9700429B36 /* libcrypto.1.0.0.dylib */,
+				627AC1C51FD1DB7600429B36 /* engines */,
+				627AC1C31FD1DB6C00429B36 /* libssl.1.0.0.dylib */,
+				625CA0871FD1D646001B16A8 /* libcrypto.35.dylib */,
+				625CA0851FD1D63B001B16A8 /* libssl.35.dylib */,
+				625CA07E1FD1BFF0001B16A8 /* libopencv_text.3.3.1.dylib */,
 				62B916E11FC836430079D157 /* libopencv_imgcodecs.3.3.1.dylib */,
 				62B916DE1FC835F70079D157 /* libopencv_imgproc.3.3.1.dylib */,
 				62B916DC1FC835D10079D157 /* libopencv_core.3.3.1.dylib */,
@@ -64,6 +88,7 @@
 		62E4B5841FC7F25700AC9C3E = {
 			isa = PBXGroup;
 			children = (
+				625CA0821FD1C37E001B16A8 /* url.cpp */,
 				62E4B59C1FC7F2BB00AC9C3E /* dank-twitter-backend */,
 				62E4B58E1FC7F25700AC9C3E /* Products */,
 				62B916DB1FC835D10079D157 /* Frameworks */,
@@ -81,8 +106,11 @@
 		62E4B59C1FC7F2BB00AC9C3E /* dank-twitter-backend */ = {
 			isa = PBXGroup;
 			children = (
+				6264FC331FCEF74C0039E05D /* Pipe.h */,
+				625CA0841FD1CDCC001B16A8 /* cpp-httplib-mixin.h */,
 				62E4B59D1FC7F2BB00AC9C3E /* main.cpp */,
 				62B916D41FC811280079D157 /* image_parser.h */,
+				625CA07C1FD19E55001B16A8 /* image_parser.cpp */,
 				62B916D51FC82CC50079D157 /* image_processing.h */,
 				62B916D91FC82F720079D157 /* image_processing.cpp */,
 			);
@@ -146,7 +174,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				625CA0831FD1C37E001B16A8 /* url.cpp in Sources */,
 				62B916DA1FC82F720079D157 /* image_processing.cpp in Sources */,
+				625CA07D1FD19E55001B16A8 /* image_parser.cpp in Sources */,
 				62E4B59E1FC7F2BB00AC9C3E /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,12 +292,20 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KFG5R89YHA;
+				FRAMEWORK_SEARCH_PATHS = "";
 				HEADER_SEARCH_PATHS = (
 					./json/src,
 					"./cpp-httplib",
 					"/usr/local/Cellar/opencv/3.3.1_1/include/**",
+					./CxxUrl,
+					/usr/local/opt/openssl/include,
 				);
-				LIBRARY_SEARCH_PATHS = /usr/local/Cellar/opencv/3.3.1_1/lib;
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/Cellar/opencv/3.3.1_1/lib,
+					/usr/local/opt/openssl/lib,
+					/usr/local/Cellar/openssl/1.0.2m/lib,
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "";
 			};
@@ -278,12 +316,20 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KFG5R89YHA;
+				FRAMEWORK_SEARCH_PATHS = "";
 				HEADER_SEARCH_PATHS = (
 					./json/src,
 					"./cpp-httplib",
 					"/usr/local/Cellar/opencv/3.3.1_1/include/**",
+					./CxxUrl,
+					/usr/local/opt/openssl/include,
 				);
-				LIBRARY_SEARCH_PATHS = /usr/local/Cellar/opencv/3.3.1_1/lib;
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/Cellar/opencv/3.3.1_1/lib,
+					/usr/local/opt/openssl/lib,
+					/usr/local/Cellar/openssl/1.0.2m/lib,
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "";
 			};

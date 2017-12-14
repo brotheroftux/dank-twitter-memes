@@ -31,7 +31,13 @@ exports.cssLoaders = function (options = {}) {
 
     return {
         css: generateLoaders(),
-        sass: generateLoaders('sass', { indentedSyntax: true })
+        sass: generateLoaders('sass', { indentedSyntax: true }),
+        js: {
+            loader: 'babel-loader',
+            options: {
+                presets: ['env']
+            }
+        }
     }
 }
 

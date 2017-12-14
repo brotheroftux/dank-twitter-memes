@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import App from '@/components/App.vue'
 
+import 'babel-polyfill'
+
 import '@/global-styles/global.sass'
 
 new Vue({

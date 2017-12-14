@@ -6,7 +6,7 @@
             <TweetView :url='url' />
             <navigation type='forward' @forward='forward' />
         </div>
-        <ParsedText :imageUrl='imageUrl' />
+        <ParsedText :imageUrls='imageUrls' />
     </div>
 </template>
 
@@ -39,17 +39,22 @@ export default {
             else
                 return defaultUrl
         },
-        imageUrl: function () {
-            if (this.currentStatus)
-                return this.currentStatus.entities.media[0].media_url
-            else
-                return ''
+        imageUrls: function () {
+            if (this.currentStatus && this.currentStatus.entities.media) {
+                const iterable = this.currentStatus.extended_entities
+                    ? this.currentStatus.extended_entities.media
+                    : this.currentStatus.entities.media
+                return iterable.map(media => media.media_url)
+            } else {
+                return []
+            }
         }
     },
     methods: {
         searchTweets: function (query) {
             twitterSearch({
-                q: `${query} filter:images`
+                q: `${query} filter:images`,
+                count: 100
             })
                 .then(data => data.statuses)
                 .then(statuses => this.statuses = statuses)

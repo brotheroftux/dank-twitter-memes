@@ -28,10 +28,7 @@ export default {
 
             Promise.all(textPromises)
             .then(values => values.join('\n'))
-            .then(text => {
-                console.log(text.length)
-                this.text = text.length ? text : defaultText
-            })
+            .then(text => this.text = text.length ? text : defaultText)
         }
     },
     methods: {

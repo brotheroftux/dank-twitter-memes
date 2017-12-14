@@ -14,7 +14,6 @@
 #include <opencv2/core.hpp>
 #include <opencv2/imgcodecs.hpp>
 #include <opencv2/imgproc.hpp>
-#include <opencv2/text/ocr.hpp>
 #pragma clang diagnostic pop
 
 #include "cpp-httplib-mixin.h"
@@ -23,7 +22,6 @@
 
 using namespace std;
 using namespace cv;
-using namespace cv::text;
 
 Mat fetch_image (const string & url);
 string parse_image (Mat image);

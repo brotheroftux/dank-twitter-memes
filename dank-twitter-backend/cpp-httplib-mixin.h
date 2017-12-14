@@ -15,7 +15,7 @@ public:
     std::shared_ptr<Response> put (const char* path, const std::string& body, const char* content_type);
 };
     
-inline std::shared_ptr<Response> ClientExt::put(
+inline std::shared_ptr<Response> ClientExt::put (
     const char* path, const std::string& body, const char* content_type)
 {
     Request req;
